@@ -1,0 +1,84 @@
+.aboutUs {
+    background-color: #0F4C35;
+    // background-image: url(../../../images/mock.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .container {
+      display: grid;
+      padding: 50px;
+      text-align: start;
+      .title {
+        h1{
+          color: #fff;
+          font-size: 1.5rem;
+          font-style: normal;
+          font-weight: 700;
+        }
+      }
+      .subtitle {
+        p {
+          padding: 15px 0;
+          color: #fff;
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: 140%;
+        }
+        ul {
+          text-align: start;
+          list-style: inside;
+          li {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            text-decoration: underline;
+            font-style: italic;
+          }
+        }
+      }
+      .imgGroup {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+    
+  
+    @media screen and (min-width: 426px) and (min-width: 768px) {
+    //   background-image: url(../../../images/AboutUsMd.svg);
+      .container {
+        .title {
+          h1{
+            color: #fff;
+          font-size: 2rem;
+          }
+        }
+      }
+    }
+  
+    @media screen and (min-width: 769px) {
+    //   background-image: url(../../../images/AboutUsLg.svg);
+      .container {
+        .title {
+          h1{
+            color: #fff;
+          font-size: 2rem;
+          }
+        }
+        grid-template-columns: repeat(2, 1fr);
+        padding: 60px;
+        .subtitle {
+          text-align: start;
+        }
+        img {
+          width: 500px;
+          height: 400px;
+        }
+      }
+    }
+  }
+  
