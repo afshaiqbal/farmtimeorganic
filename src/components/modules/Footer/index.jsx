@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../images/logo.png";
+import logo from "../../../images/logofinal.jpg";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 // import { CategoryList } from "../../../data";
@@ -46,30 +46,20 @@ const Footer = () => {
         <div className='title'>Contact Us</div>
         <div className='subtitle'>For any queries mail us at</div>
         <div className='subtitle'>
-          <a className='mail' href='mailto:alamsaqlain@hotmail.com'>
+          <a className='mail' href='mailto:info@farmtimeorganic.com'>
             <AiOutlineMail size={30} />
-            alamsaqlain@hotmail.com
+            info@farmtimeorganic.com
           </a>
         </div>
         <div className='subtitle'>Call us at</div>
         <div className='title'>
           <a
             className='call'
-            href='tel:+918013856518'
+            href='tel:+917439491478'
             title='CLICK TO DIAL - Mobile Only'
           >
             <BiPhoneCall size={30} className='buzz-out-on-hover wave' />
-            +91 8013856518
-          </a>
-        </div>
-        <div className='title'>
-          <a
-            className='call'
-            href='tel:+918017462207'
-            title='CLICK TO DIAL - Mobile Only'
-          >
-            <BiPhoneCall size={30} className='buzz-out-on-hover wave' />
-            +91 8017462207
+            +91 7439491478
           </a>
         </div>
       </div>

@@ -1,11 +1,14 @@
 import React from "react";
 import './index.scss';
-import heroimage from '../../../images/farm.png'
+import heroVideo from '../../../images/hero.mov';
 
 function Header() {
   return (
     <div className='hero-section-carousel'>
-         <img src={heroimage} alt="Hero Image" />
+      <video autoPlay loop muted className="hero-video">
+        <source src={heroVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 }
