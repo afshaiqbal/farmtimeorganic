@@ -1,7 +1,7 @@
 .footer {
     padding: 2.25rem;
     text-align: -webkit-left;
-    background-color: #04331C;
+    background-color: white;
     width: 100%;
     bottom: 0;
     left: 0;
@@ -12,8 +12,8 @@
     }
     .info {
       img {
-        width: 150px;
-        height: 150px;
+        width: 130px;
+        height: 130px;
       }
       .companyInfo {
         p {
@@ -28,10 +28,10 @@
       font-size: 1rem;
       font-style: normal;
       font-weight: 700;
-      color: #fff;
+      color: black;
       padding-top: 1rem;
       .call {
-        color: #fff;
+        color: black;
         display: flex;
         align-items: center;
         justify-content: flex-start;
@@ -42,13 +42,13 @@
     }
   
     .subtitle {
-      color: #c8c8c8;
+      color: black;
       font-size: 1rem;
       font-style: normal;
       font-weight: 400;
       padding: 0.25rem 0;
       .mail {
-        color: #fff;
+        color: black;
         display: flex;
         justify-content: flex-start;
         align-items: center;

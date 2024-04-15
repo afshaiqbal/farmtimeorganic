@@ -1,6 +1,6 @@
 import React from "react";
 import './index.scss';
-import heroVideo from '../../../images/hero.mov';
+import heroVideo from '../../../images/hero.mp4';
 
 function Header() {
   return (
