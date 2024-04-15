@@ -5,6 +5,10 @@
   overflow: hidden; /* Hide any overflow */
   margin-bottom: 20px;
   background-color: #307346;
+
+  @media only screen and (max-width: 768px) {
+    background-color: transparent; /* Remove background color for mobile */
+  }
 }
 
 .hero-video {
@@ -14,4 +18,8 @@
   margin: auto; /* Center the video horizontally */
   margin-bottom: 20px; 
   object-fit: cover; /* Ensure the video covers the entire container */
+
+  @media only screen and (max-width: 768px) {
+    width: 100%; /* Set the video width to 100% for mobile */
+  }
 }
