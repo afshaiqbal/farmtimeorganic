@@ -7,7 +7,7 @@ import "./index.scss";
 // import { Link } from "react-router-dom";
 const Footer = () => {
   return (
-    <div className='footer'>
+    <div className='footer' id="contact">
       <div className='info'>
         <a href='/' className='logo'>
           <img src = {logo} alt='logo' />

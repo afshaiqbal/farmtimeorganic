@@ -31,14 +31,14 @@ function Navbar() {
             </Link>
         </li>
         <li className='nav-item'>           
-         <Link to='/products' onClick={closeMenu} spy={true}
+         <Link to='/#product' onClick={closeMenu} spy={true}
               smooth={true}
               scroll={scrollWithOffset}>
               Products
             </Link></li>
             <li className='nav-item'>
             <Link
-              to='/about'
+              to='/#about'
               spy={true}
               smooth={true}
               scroll={scrollWithOffset}
@@ -49,7 +49,7 @@ function Navbar() {
           </li>
           <li className='nav-item'>
             <Link
-              to='/contact'
+              to='/#contact'
               spy={true}
               smooth={true}
               scroll={scrollWithOffset}
