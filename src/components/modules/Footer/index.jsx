@@ -15,6 +15,7 @@ const Footer = () => {
         <div className='companyInfo subtitle'>
           <p>Manufactured by :</p>
           <p>FARMTIME ORGANIC PVT LTD</p>
+          <p><span className="fssai-italic">fssai</span> Registered: <span className="fssai-registration">12824999000271</span></p>
           {/* <p>An ISO 9001:2015 Certified Co.</p> */}
           <p>98A, Dilkusha Street</p>
           <p>Kolkata-700017</p>
