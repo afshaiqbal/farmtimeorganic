@@ -13,30 +13,39 @@ const ReviewForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
- 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
-    });
-    console.log(formData);
+    
+    try {
+      const response = await fetch('https://formsubmit.co/afshaiqbal0511@gmail.com', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        alert('Form submitted successfully!');
+        // Clear form data after successful submission
+        setFormData({
+          name: "",
+          email: "",
+          message: "",
+        });
+      } else {
+        throw new Error('Form submission failed.');
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error.message);
+      alert('Form submission failed. Please try again later.');
+    }
   };
-  
 
   return (
     <div className='review-form'>
-      <h2 title="Queries">
-        If you have any query, please reach out to us with your message and
-        we'll get back to you.
-      </h2>
-      <form
-        action='https://formsubmit.co/afshaiqbal0511@gmail.com'
-        onSubmit={handleSubmit}
-        method='POST'
-        netlify
-      >
+      <h2>Leave a Review</h2>
+      <form onSubmit={handleSubmit}>
         <div className='form-group'>
           <label>
             Name:
@@ -72,17 +81,6 @@ const ReviewForm = () => {
             />
           </label>
         </div>
-        <input type='hidden' name='_captcha' value='false'></input>
-        <input
-          type='hidden'
-          name='_autoresponse'
-          value="Thanks for contacting Farmtime Organic. We'll get it touch soon!"
-        ></input>
-        <input
-          type='hidden'
-          name='_next'
-          value='https://farmtimeorganic.com'
-        ></input>
         <button type='submit'>Submit</button>
       </form>
     </div>
