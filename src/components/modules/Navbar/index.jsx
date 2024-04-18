@@ -26,7 +26,7 @@ function Navbar() {
         </div>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li className='nav-item'>
-        <Link to='/' onClick={closeMenu}>
+        <Link to='/#header' onClick={closeMenu}>
               Home
             </Link>
         </li>
@@ -49,7 +49,7 @@ function Navbar() {
           </li>
           <li className='nav-item'>
             <Link
-              to='/#contact'
+              to='/review'
               spy={true}
               smooth={true}
               scroll={scrollWithOffset}

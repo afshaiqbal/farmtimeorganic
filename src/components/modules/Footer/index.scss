@@ -38,6 +38,22 @@
     }
   
     .title {
+      margin-top: 40px;
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 700;
+      color: black;
+      .call {
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        webp {
+          padding-right: 10px;
+        }
+      }
+    }
+    .title1 {
       font-size: 1rem;
       font-style: normal;
       font-weight: 700;

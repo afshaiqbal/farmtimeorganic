@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../images/logofinal.jpg";
+import logo from "../../../images/logofinal.png";
 import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 // import { CategoryList } from "../../../data";
@@ -53,7 +53,7 @@ const Footer = () => {
           </a>
         </div>
         <div className='subtitle'>Call us at</div>
-        <div className='title'>
+        <div className='title1'>
           <a
             className='call'
             href='tel:+917439491478'

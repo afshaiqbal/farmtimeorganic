@@ -4,7 +4,7 @@ import heroVideo from '../../../images/hero.mp4';
 
 function Header() {
   return (
-    <div className='hero-section-carousel'>
+    <div className='hero-section-carousel' id="header">
       <video autoPlay loop muted className="hero-video">
         <source src={heroVideo} type="video/mp4" />
         Your browser does not support the video tag.
