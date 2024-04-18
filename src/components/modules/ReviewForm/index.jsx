@@ -13,33 +13,13 @@ const ReviewForm = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    
-    try {
-      const response = await fetch('http://localhost:5000/submit-form', { // Proxy server endpoint
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(formData),
-      });
-      
-      if (response.ok) {
-        alert('Form submitted successfully!');
-        // Clear form data after successful submission
-        setFormData({
-          name: "",
-          email: "",
-          message: "",
-        });
-      } else {
-        throw new Error('Form submission failed.');
-      }
-    } catch (error) {
-      console.error('Error submitting form:', error.message);
-      alert('Form submission failed. Please try again later.');
-    }
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
 
   return (
@@ -48,7 +28,12 @@ const ReviewForm = () => {
         If you have any query, please reach out to us with your message and
         we'll get back to you.
       </h2>
-      <form onSubmit={handleSubmit}>
+      <form
+        action='https://formsubmit.co/afshaiqbal0511@gmail.com'
+        onSubmit={handleSubmit}
+        method='POST'
+        netlify
+      >
         <div className='form-group'>
           <label>
             Name:
@@ -84,6 +69,17 @@ const ReviewForm = () => {
             />
           </label>
         </div>
+        <input type='hidden' name='_captcha' value='false'></input>
+        <input
+          type='hidden'
+          name='_autoresponse'
+          value="Thanks for contacting Farmtime Organic. We'll get it touch soon!"
+        ></input>
+        <input
+          type='hidden'
+          name='_next'
+          value='https://farmtimeorganic.com'
+        ></input>
         <button type='submit'>Submit</button>
       </form>
     </div>
