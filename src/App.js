@@ -7,6 +7,7 @@ import Dashboard from "./components/modules/Dashboard";
 import Products from './components/modules/Products';
 import AboutUs from './components/modules/AboutUs';
 import ReviewForm from './components/modules/ReviewForm';
+import ThankYouPage from './components/modules/Thank-You';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/products' element={<Products />} />
         <Route path='/about' element={<AboutUs />} />
         <Route path='/review' element={<ReviewForm />} /> {/* Use element prop instead of component */}
+        <Route path='/thank-you' element={<ThankYouPage/>} />
       </Routes>
       <Footer />
     </div>
