@@ -4,6 +4,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { BiPhoneCall } from "react-icons/bi";
 // import { CategoryList } from "../../../data";
 import "./index.scss";
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 const Footer = () => {
   return (
@@ -44,7 +45,11 @@ const Footer = () => {
         </div> */}
       </div>
       <div className='contact'>
+        <div>
+      <Link to='/review'>
         <div className='title'>Contact Us</div>
+     </Link>
+        </div>
         <div className='subtitle'>For any queries mail us at</div>
         <div className='subtitle'>
           <a className='mail' href='mailto:info@farmtimeorganic.com'>
