@@ -1,7 +1,9 @@
-import peri from '../images/peri.jpg';
-import cheese from '../images/cheese.jpg';
-import salt from '../images/salt.jpg';
-import onion from '../images/onion.jpg';
+import peri from '../images/peri.jpeg';
+import cheese from '../images/cheese.jpeg';
+import salt from '../images/salt.jpeg';
+import onion from '../images/onion.jpeg';
+import cheesecorn from '../images/cheesecorn.jpeg';
+import pericorn from '../images/pericorn.jpeg';
 
 const productData = [
     {
@@ -13,14 +15,14 @@ const productData = [
     },
     {
       id: 2,
-      name: 'Cheese Makhana',
+      name: 'Cheese Blast Makhana',
     //   description: 'Description 2',
     //   price: 20,
       image: [cheese]
     },
     {
         id: 3,
-        name: 'Himalayan Pink Salt & Pepper Makhana',
+        name: 'Desi Masale Makhana',
         // description: 'Description 1',
         // price: 10,
         image: [salt]
@@ -37,14 +39,14 @@ const productData = [
         name: 'Tangy Peri-Peri Popcorn',
         // description: 'Description 1',
         // price: 10,
-        image: [peri]
+        image: [pericorn]
       },
       {
         id: 6,
-        name: 'Cheese Popcorn',
+        name: 'Cheese Blast Popcorn',
         // description: 'Description 2',
         // price: 20,
-        image: [cheese]
+        image: [cheesecorn]
       },
     
   ];
