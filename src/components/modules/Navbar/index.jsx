@@ -2,7 +2,7 @@ import React,  { useState } from 'react';
 import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 import './index.scss';
 import { HashLink as Link } from "react-router-hash-link";
-import logo from "../../../images/logofinal.jpg";
+import logo from "../../../images/logofinal.png";
 
 function Navbar() {
     const [click, setClick] = useState(false);
