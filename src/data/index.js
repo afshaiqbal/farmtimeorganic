@@ -1,55 +1,131 @@
-import peri from '../images/peri.jpeg';
-import cheese from '../images/cheese.jpeg';
-import salt from '../images/salt.jpeg';
-import onion from '../images/onion.jpeg';
-import cheesecorn from '../images/cheesecorn.jpeg';
-import pericorn from '../images/pericorn.jpeg';
+import peri from '../images/periMakhana.jpg';
+import periJar from '../images/periJar.png';
+import periNutri from '../images/periNutri.jpeg';
+import peri1 from '../images/peri1.jpeg';
+import peri2 from '../images/peri2.jpeg';
+import cheese from '../images/cheeseMakhana.jpg';
+import cheeseBlastJar from '../images/cheeseBlastJar.jpeg';
+import cheeseNutri from '../images/cheeseNutri.jpeg';
+import cheese1 from '../images/cheese1.jpeg';
+import cheese2 from '../images/cheese2.jpeg';
+import onion from '../images/onionMakhana.jpg';
+import onionJar from '../images/onionJar.jpeg';
+import onionNutri from '../images/onionNutri.jpeg';
+import onion1 from '../images/onion1.jpeg';
+import onion2 from '../images/onion2.jpeg';
+import periPopcorn from '../images/periPopcorn.jpg';
+import cheesePopcorn from '../images/cheesePopcorn.jpg';
 
-const productData = [
+export const productData = [
     {
       id: 1,
       name: 'Tangy Peri-Peri Makhana',
-    //   description: 'Description 1',
-    //   price: 10,
-      image: [peri]
+      description: "FarmTime Organic's Tangy Peri Peri Makhana offers roasted fox nuts with a bold, zesty peri peri seasoning, This snack delivers the perfect blend of tangy and spicy flavors, making each bite a delightful treat, Enjoy the fiery zest and mouthwatering taste of Tangy Peri Peri Makhana, which is also high in protein. Makhana (Popped Lotus Seeds) approx 70%, olive oil 14%, spices and Condiments 12% [ Tomato, peri peri, Amchur, Onion, Garlic, Corn Flour, Kashmiri Red Chilli, Chilli, Salt ]. ROASTED IN OLIVE OIL , GLUTEN FREE, ZERO CHOLESTEROL. Contains milk solid & tree nuts. Read the ingredients carefully. Nutritional Information (approximate values 100g) mentioned behind the packet.",
+      quantity: 'TANGY PERI PERI 12GM',
+      price: 'Rs 20.00',
+      ingredients: "Makhana (Popped Lotus Seeds) approx 70%, olive oil 14%, spices and Condiments 16% [ Tomato, peri peri, Amchur, Onion, Garlic, Corn Flour, Kashmiri Red Chilli, Chilli, Salt ]",
+      type: "Flavoured Makhana, Makhana",
+      brand: 'Farmtime Organic',
+      availability: 'In Stock',
+      image: [peri],
+      images:[peri, periNutri]
     },
     {
       id: 2,
       name: 'Cheese Blast Makhana',
-    //   description: 'Description 2',
-    //   price: 20,
-      image: [cheese]
+      description: "FarmTime Organic introduces Cheese Blast Makhana, a crispy snack with roasted fox nuts coated in irresistible cheesy seasoning, Each bite offers a savory crunch that's perfect for satisfying cravings, This delicious and flavorful alternative to chips is also low in calories, Snack smart and indulge in the cheesy goodness of Cheese Blast Makhana!. Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk, Kashmiri red chilli, Cheese, Black pepper,Sugar, Onion, Garlic, Oregano, Corn flour, Salt, Black salt, Citric Acid ]. ROASTED IN OLIVE OIL , GLUTEN FREE, ZERO CHOLESTEROL. Contains milk solid & tree nuts. Read the ingredients carefully. Nutritional Information (approximate values 100g) mentioned behind the packet.",
+      quantity: 'CHEESE BLAST 12GM',
+      price: 'Rs 20.00',
+      ingredients: "Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk, Kashmiri red chilli, Cheese, Black pepper,Sugar, Onion, Garlic, Oregano, Corn flour, Salt, Black salt, Citric Acid ]",
+      type: "Flavoured Makhana, Makhana",
+      brand: 'Farmtime Organic',
+      availability: 'In Stock',
+      image: [cheese],
+      images:[cheese, cheeseNutri]
     },
-    {
+      {
         id: 3,
-        name: 'Desi Masale Makhana',
-        // description: 'Description 1',
-        // price: 10,
-        image: [salt]
+        name: 'Onion & Garlic Makhana',
+        description: "Introducing FarmTime Organic's Onion Garlic Makhana, a savory snack that combines the rich flavors of onion and garlic with the crunch of roasted fox nuts, Each bite delivers a burst of aromatic taste, perfect for those who crave bold and robust flavors, Enjoy this delicious treat, which is also rich in antioxidants. Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk & coconut milk powder, Cheese, Black pepper, Onion, Garlic, Oregano, Corn Flour, Salt, Citric Acid ]. ROASTED IN OLIVE OIL , GLUTEN FREE, ZERO CHOLESTEROL. Contains milk solid & tree nuts. Read the ingredients carefully. Nutritional Information (approximate values 100g) mentioned behind the packet.",
+        quantity: 'ONION GARLIC 12GM',
+        price: 'Rs 20.00',
+        ingredients: "Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk & coconut milk powder, Cheese, Black pepper, Onion, Garlic, Oregano, Corn Flour, Salt, Citric Acid ]",
+        type: "Flavoured Makhana, Makhana",
+        brand: 'Farmtime Organic',
+        availability: 'In Stock',
+        image: [onion],
+        images:[onion, onionNutri]
       },
       {
         id: 4,
-        name: 'Onion & Garlic Makhana',
-        // description: 'Description 2',
-        // price: 20,
-        image: [onion]
+        name: 'Tangy Peri-Peri Makhana',
+        description: "FarmTime Organic's Tangy Peri Peri Makhana offers roasted fox nuts with a bold, zesty peri peri seasoning, This snack delivers the perfect blend of tangy and spicy flavors, making each bite a delightful treat, Enjoy the fiery zest and mouthwatering taste of Tangy Peri Peri Makhana, which is also high in protein. Makhana (Popped Lotus Seeds) approx 70%, olive oil 14%, spices and Condiments 12% [ Tomato, peri peri, Amchur, Onion, Garlic, Corn Flour, Kashmiri Red Chilli, Chilli, Salt ]. ROASTED IN OLIVE OIL , GLUTEN FREE, ZERO CHOLESTEROL. Contains milk solid & tree nuts. Read the ingredients carefully. Nutritional Information (approximate values 100g) mentioned behind the packet.",
+        quantity: 'TANGY PERI PERI 95GM',
+        price: 'Rs 180.00',
+        ingredients: "Makhana (Popped Lotus Seeds) approx 70%, olive oil 14%, spices and Condiments 16% [ Tomato, peri peri, Amchur, Onion, Garlic, Corn Flour, Kashmiri Red Chilli, Chilli, Salt ]",
+        type: "Flavoured Makhana, Makhana",
+        brand: 'Farmtime Organic',
+        availability: 'In Stock',
+        image: [periJar],
+        images:[periJar, peri2, peri1, periNutri]
       },
       {
         id: 5,
-        name: 'Tangy Peri-Peri Popcorn',
-        // description: 'Description 1',
-        // price: 10,
-        image: [pericorn]
+        name: 'Cheese Blast Makhana',
+        description: "FarmTime Organic introduces Cheese Blast Makhana, a crispy snack with roasted fox nuts coated in irresistible cheesy seasoning, Each bite offers a savory crunch that's perfect for satisfying cravings, This delicious and flavorful alternative to chips is also low in calories, Snack smart and indulge in the cheesy goodness of Cheese Blast Makhana!. Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk, Kashmiri red chilli, Cheese, Black pepper,Sugar, Onion, Garlic, Oregano, Corn flour, Salt, Black salt, Citric Acid ]. ROASTED IN OLIVE OIL , GLUTEN FREE, ZERO CHOLESTEROL. Contains milk solid & tree nuts. Read the ingredients carefully. Nutritional Information (approximate values 100g) mentioned behind the packet.",
+        quantity: 'CHEESE BLAST 95GM',
+        price: 'Rs 180.00',
+        ingredients: "Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk, Kashmiri red chilli, Cheese, Black pepper,Sugar, Onion, Garlic, Oregano, Corn flour, Salt, Black salt, Citric Acid ]",
+        type: "Flavoured Makhana, Makhana",
+        brand: 'Farmtime Organic',
+        availability: 'In Stock',
+        image: [cheeseBlastJar],
+        images:[cheeseBlastJar, cheese2, cheese1, cheeseNutri]
       },
       {
         id: 6,
+        name: 'Onion & Garlic Makhana',
+        description: "Introducing FarmTime Organic's Onion Garlic Makhana, a savory snack that combines the rich flavors of onion and garlic with the crunch of roasted fox nuts, Each bite delivers a burst of aromatic taste, perfect for those who crave bold and robust flavors, Enjoy this delicious treat, which is also rich in antioxidants. Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk & coconut milk powder, Cheese, Black pepper, Onion, Garlic, Oregano, Corn Flour, Salt, Citric Acid ]. ROASTED IN OLIVE OIL , GLUTEN FREE, ZERO CHOLESTEROL. Contains milk solid & tree nuts. Read the ingredients carefully. Nutritional Information (approximate values 100g) mentioned behind the packet.",
+        quantity: 'ONION GARLIC 95GM',
+        price: 'Rs 180.00',
+        ingredients: "Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk & coconut milk powder, Cheese, Black pepper, Onion, Garlic, Oregano, Corn Flour, Salt, Citric Acid ]",
+        type: "Flavoured Makhana, Makhana",
+        brand: 'Farmtime Organic',
+        availability: 'In Stock',
+        image: [onionJar],
+        images:[onionJar, onion2, onion1, onionNutri]
+      },
+]
+
+   export const popcornData = [
+        {
+        id: 7,
+        name: 'Tangy Peri-Peri Popcorn',
+        description: "FarmTime Organic's Tangy Peri Peri Popcorn delivers vibrant peri peri seasoning on every kernel, This snack provides a delightful mix of tangy and spicy flavors, perfect for those who love a little kick, Enjoy the bold, tangy taste and satisfying crunch of Tangy Peri Peri Popcorn, which is also high in fiber. Popcorn (approx 70%), olive oil 14%, spices and Condiments 16% [ Tomato, peri peri, Amchur, Onion, Garlic, Corn Flour, Kashmiri Red Chilli, Chilli, Salt ]. ROASTED IN OLIVE OIL , GLUTEN FREE, ZERO CHOLESTEROL. Contains milk solid & tree nuts. Read the ingredients carefully. Nutritional Information (approximate values 100g) mentioned behind the packet.",
+        quantity: 'TANGY PERI PERI 12GM',
+        price: 'Rs 10.00',
+        ingredients: "Popcorn (approx 70%), olive oil 14%, spices and Condiments 16% [ Tomato, peri peri, Amchur, Onion, Garlic, Corn Flour, Kashmiri Red Chilli, Chilli, Salt ]",
+        type: "Flavoured Popcorn, Popcorn",
+        brand: 'Farmtime Organic',
+        availability: 'In Stock',
+        image: [periPopcorn],
+        images:[periPopcorn]
+      },
+      {
+        id: 8,
         name: 'Cheese Blast Popcorn',
-        // description: 'Description 2',
-        // price: 20,
-        image: [cheesecorn]
+        description: "FarmTime Organic's Cheese Blast Popcorn features perfectly popped kernels coated in luscious cheese seasoning, This snack offers a rich, savory taste that's hard to resist, making it perfect for movie nights or parties, Indulge in the cheesy flavor and delightful crunch of Cheese Blast Popcorn, which is also a whole grain snack. Popcorn (approx 70%), olive oil 14%, spices and condiments 16% [ Buttermilk, Kashmiri red chilli, Cheese, Black pepper, Sugar, Onion, Garlic, Oregano, Corn flour, Salt, Black salt, Citric Acid ]. ROASTED IN OLIVE OIL , GLUTEN FREE, ZERO CHOLESTEROL. Contains milk solid & tree nuts. Read the ingredients carefully. Nutritional Information (approximate values 100g) mentioned behind the packet.",
+        quantity: 'CHEESE BLAST 12 GM',
+        price: 'Rs 10.00',
+        ingredients: "Popcorn (approx 70%), olive oil 14%, spices and condiments 16% [ Buttermilk, Kashmiri red chilli, Cheese, Black pepper, Sugar, Onion, Garlic, Oregano, Corn flour, Salt, Black salt, Citric Acid ]",
+        type: "Flavoured Popcorn, Popcorn",
+        brand: 'Farmtime Organic',
+        availability: 'In Stock',
+        image: [cheesePopcorn],
+        images:[cheesePopcorn]
       },
     
   ];
   
-  export default productData;
+
   

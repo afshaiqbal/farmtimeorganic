@@ -8,6 +8,7 @@ import Products from './components/modules/Products';
 import AboutUs from './components/modules/AboutUs';
 import ReviewForm from './components/modules/ReviewForm';
 import ThankYouPage from './components/modules/Thank-You';
+import ProductDetail from './components/modules/ProductDetail';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/about' element={<AboutUs />} />
         <Route path='/review' element={<ReviewForm />} /> {/* Use element prop instead of component */}
         <Route path='/thank-you' element={<ThankYouPage/>} />
+        <Route path="/product/:id" element={<ProductDetail />} />
       </Routes>
       <Footer />
     </div>
