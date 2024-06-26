@@ -1,108 +1,131 @@
 .logo-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    z-index: 1;
-  }
-  
-  .logo-container img {
-    width: 400px;
-    height: auto;
-    z-index: 10;
-  }
-  
-  .background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-  
-  .background-image {
-    position: absolute;
-     top: 50%; /* Move this line to adjust the height */
-  transform: translateY(-50%); /* Center vertically within the adjusted top position */
-    width: 100vh;
-    height: 250px;
-    opacity: 0.3;
-    background-size: contain;
-    background-repeat: no-repeat;
-    will-change: transform;
-  }
-  
-  .coconut-tree {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHcCQn4BjEvC0Z2FgTmQYSj5tx9McisFbsqw&s');
-  }
-  
-  .additional-image1 {
-    background-image: url('https://cdn.faire.com/fastly/581c439d8bc342e76862c01572b674bbe397ab8fcbe5310d83452e91f3a35a0a.jpeg?bg-color=FFFFFF&dpr=1&fit=crop&format=jpg&height=720&width=720'); /* Replace with the actual URL of your image */
-  }
-  
-  .additional-image2 {
-    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQfCVdVk88xwIoqnJRjKRUvDoU6-vtl6v7ew&s'); /* Replace with the actual URL of your image */
-  }
-  
- /* Media Queries for Mobile View */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: 1;
+}
+
+.logo-container img {
+  width: 400px;
+  height: auto;
+  z-index: 10;
+}
+
+.background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.background-image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100vh;
+  height: 250px;
+  opacity: 0.3;
+  background-size: contain;
+  background-repeat: no-repeat;
+  will-change: transform;
+}
+
+.coconut-tree {
+  background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHcCQn4BjEvC0Z2FgTmQYSj5tx9McisFbsqw&s');
+}
+
+.additional-image1 {
+  background-image: url('../../../images/makhanaimg.jpg');
+}
+
+.additional-image2 {
+  background-image: url('../../../images/popcorn.jpg');
+}
+
+.additional-image3 {
+  background-image: url('../../../images/fiber.jpeg');
+}
+
+.additional-image4 {
+  background-image: url('../../../images/oliveoil.jpeg');
+}
+
+.additional-image5 {
+  background-image: url('../../../images/notfried.jpeg');
+}
+
+.additional-image6 {
+  background-image: url('../../../images/plantbasednew.png');
+}
+
+/* Media Queries for Mobile View */
 @media (max-width: 768px) {
-    .logo-container {
-        height: 60vh;
-      }
-    .logo-container img {
-      width: 250px;
-    }
-  
-    .background-image {
-      width: 200px; /* Same width as logo image */
-    }
-  
-    .coconut-tree {
-      top: 65%;
-    }
-  
-    .additional-image1 {
-      top: 65%;
-    }
-  
-    .additional-image2 {
-      top: 65%;
-    }
+  .logo-container {
+    height: 60vh;
   }
-  
-  @media (max-width: 480px) {
-    .logo-container {
-      height: 70vh;
-    }
-  
-    .logo-container img {
-      width: 200px;
-    }
-  
-    .background-image {
-      width: 150px; /* Same width as logo image */
-    }
-  
-    .coconut-tree {
-      top: 65%;
-    }
-  
-    .additional-image1 {
-      top: 65%;
-      animation-delay: 2s;
-    }
-  
-    .additional-image2 {
-      top: 65%;
-      animation-delay: 4s;
-    }
+
+  .logo-container img {
+    width: 250px;
   }
-  
-  @keyframes fadeIn {
-    0% { opacity: 0; }
-    33.33% { opacity: 0.3; }
-    66.66% { opacity: 0.3; }
-    100% { opacity: 0; }
+
+  .background-image {
+    width: 150px;
   }
+
+  .coconut-tree,
+  .additional-image1,
+  .additional-image2,
+  .additional-image3,
+  .additional-image4,
+  .additional-image5,
+  .additional-image6 {
+    top: 60%; /* Adjust top positioning to avoid vertical overlap */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    height: 70vh;
+  }
+
+  .logo-container img {
+    width: 200px;
+  }
+
+  .background-image {
+    width: 100px;
+  }
+
+  .coconut-tree {
+    top: 65%;
+  }
+  .additional-image1 {
+    top: 65%;
+    animation-delay: 2s;
+  }
+  .additional-image2 {
+    top: 65%;
+    animation-delay: 4.5s;
+  }
+  .additional-image3{
+    top: 65%;
+    animation-delay: 6s;
+  }
+  .additional-image4 {
+    top: 65%;
+    animation-delay: 7s;
+  }
+  .additional-image5 {
+    top: 65%;
+    animation-delay: 8.5s;
+  }
+  .additional-image6 {
+    top: 65%;
+    animation-delay: 10s;
+  }
+
+}

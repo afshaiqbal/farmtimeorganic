@@ -1,183 +1,245 @@
 .product-detail {
-    padding: 20px;
-  
-    .product-detail-container {
-      display: flex;
-      gap: 40px; /* Increased gap for better spacing */
-  
-      .product-images {
-        flex: 1;
-        max-width: 50%; /* Adjust width to match the layout */
-        padding: 10px;
+  padding: 20px;
+
+  .product-detail-container {
+    display: flex;
+    gap: 40px; /* Increased gap for better spacing */
+
+    .product-images {
+      flex: 1;
+      max-width: 50%; /* Adjust width to match the layout */
+      padding: 10px;
+      position: relative;
+
+      .image-magnifier-wrapper {
         position: relative;
-  
+
         .carousel-image {
           max-width: 100%;
           height: auto;
           max-height: 500px; /* Adjust height as needed */
           object-fit: contain;
         }
-  
-        .carousel-arrow {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          background-color: rgba(0, 0, 0, 0.5);
-          color: white;
-          border: none;
-          padding: 10px;
-          cursor: pointer;
-          z-index: 2;
-  
-          &.carousel-arrow-prev {
-            left: 10px;
-          }
-  
-          &.carousel-arrow-next {
-            right: 10px;
-          }
-        }
-  
-        .carousel-counter {
-          text-align: center;
-          margin-top: 10px;
-          font-size: 14px;
+
+        .inner-image-zoom {
+          display: block;
+          max-width: 100%;
+          height: auto;
+          max-height: 500px; /* Adjust height as needed */
+          object-fit: contain;
         }
       }
-  
-      .product-info {
-        flex: 1;
-        max-width: 50%; /* Adjust width to match the layout */
+
+      .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        z-index: 2;
+
+        &.carousel-arrow-prev {
+          left: 10px;
+        }
+
+        &.carousel-arrow-next {
+          right: 10px;
+        }
+      }
+
+      .carousel-counter {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    }
+
+    .product-info {
+      flex: 1;
+      max-width: 50%; /* Adjust width to match the layout */
+      display: flex;
+      flex-direction: column;
+      text-align: left; /* Ensure text is left-aligned */
+
+      h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+      }
+
+      p {
+        margin-bottom: 10px;
+        line-height: 1.5;
+      }
+
+      .price {
+        font-size: 1.5em;
+        margin: 20px 0;
+      }
+
+      .availability {
+        color: green;
+        font-weight: bold;
+      }
+
+      .add-to-cart {
         display: flex;
-        flex-direction: column;
-        text-align: left; /* Ensure text is left-aligned */
-  
-        h1 {
-          font-size: 2em;
-          margin-bottom: 20px;
-        }
-  
-        p {
-          margin-bottom: 10px;
-          line-height: 1.5;
-        }
-  
-        .price {
-          font-size: 1.5em;
-          margin: 20px 0;
-        }
-  
-        .availability {
-          color: green;
-          font-weight: bold;
-        }
-  
-        .add-to-cart {
+        align-items: center;
+        margin-top: 20px;
+
+        .quantity {
           display: flex;
           align-items: center;
-          margin-top: 20px;
-  
-          .quantity {
-            display: flex;
-            align-items: center;
-  
-            input {
-              width: 50px;
-              text-align: center;
-              margin: 0 10px;
-            }
-          }
-  
-          button {
-            background-color: #f96332;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            cursor: pointer;
-            margin-left: 10px;
+
+          input {
+            width: 50px;
+            text-align: center;
+            margin: 0 10px;
           }
         }
-  
-        .wishlist-compare {
-          display: flex;
-          margin-top: 10px;
-  
-          button {
-            background: none;
-            border: none;
-            color: #f96332;
-            cursor: pointer;
-            margin-right: 10px;
-          }
+
+        button {
+          background-color: #f96332;
+          color: white;
+          border: none;
+          padding: 10px 20px;
+          cursor: pointer;
+          margin-left: 10px;
         }
       }
-    }
-  
-    .product-description {
-      margin-top: 40px;
-      text-align: left; /* Ensure text is left-aligned */
-      font-weight: 450;
-      font-size: 16.5px;
-  
-      span {
-        display: block;
-        font-size: 1em;
-        line-height: 1.5;
-        margin-bottom: 10px;
-      }
-    }
-  
-    @media (max-width: 768px) {
-      .product-detail-container {
-        flex-direction: column;
-  
-        .product-images,
-        .product-info {
-          max-width: 100%;
-        }
-  
-        .product-images {
-          .carousel-image {
-            max-height: 250px;
-          }
-        }
-      }
-    }
-  
-    @media (max-width: 480px) {
-      .product-detail-container {
-        gap: 10px;
-  
-        .product-images {
-          .carousel-image {
-            max-height: 200px;
-          }
-  
-          .carousel-arrow {
-            padding: 5px;
-          }
-  
-          .carousel-counter {
-            font-size: 12px;
-          }
-        }
-  
-        .product-info {
-          h1 {
-            font-size: 1.5em;
-          }
-  
-          p {
-            font-size: 0.9em;
-          }
-        }
-  
-        .product-description {
-          span {
-            font-size: 0.9em;
-          }
+
+      .wishlist-compare {
+        display: flex;
+        margin-top: 10px;
+
+        button {
+          background: none;
+          border: none;
+          color: #f96332;
+          cursor: pointer;
+          margin-right: 10px;
         }
       }
     }
   }
-  
+
+  .product-description {
+    margin-top: 40px;
+    text-align: left; /* Ensure text is left-aligned */
+    font-weight: 450;
+    font-size: 16.5px;
+
+    span {
+      display: block;
+      font-size: 1em;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+  }
+
+  /* Modal Styles */
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it is above other content */
+
+    .modal-content {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      max-width: 500px;
+      width: 80%; /* Adjust width for responsiveness */
+      
+      h2 {
+        margin-bottom: 15px;
+      }
+
+      p {
+        margin-bottom: 20px;
+      }
+
+      button {
+        background-color: #f96332;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .product-detail-container {
+      flex-direction: column;
+
+      .product-images,
+      .product-info {
+        max-width: 100%;
+      }
+
+      .product-images {
+        .carousel-image {
+          max-height: 250px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .product-detail-container {
+      gap: 10px;
+
+      .product-images {
+        .carousel-image {
+          max-height: 200px;
+        }
+
+        .carousel-arrow {
+          padding: 5px;
+        }
+
+        .carousel-counter {
+          font-size: 12px;
+        }
+      }
+
+      .product-info {
+        h1 {
+          font-size: 1.5em;
+        }
+
+        p {
+          font-size: 0.9em;
+        }
+      }
+
+      .product-description {
+        span {
+          font-size: 0.9em;
+        }
+      }
+    }
+
+    /* Modal styles for mobile */
+    .modal .modal-content {
+      width: 90%; /* Make modal content take more width on small screens */
+      padding: 15px;
+      
+      button {
+        width: 100%; /* Full width button for mobile */
+        padding: 10px 0;
+      }
+    }
+  }
+}
