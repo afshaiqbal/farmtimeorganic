@@ -1,97 +1,101 @@
 .title {
     text-align: center;
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-top: 20px;
   
     h1 {
-      font-size: 36px;
+      font-size: 28px;
       color: #333;
     }
-   
   }
+  
   .button-link {
     display: inline-block;
     text-decoration: none;
     color: #307346;
     text-align: center;
-}
-
-.button-link:hover {
-    background-color: #ddd;
-}
+  
+    &:hover {
+      background-color: #ddd;
+    }
+  }
+  
   .follow-us {
     position: relative;
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    border: 2px solid #ddd; /* Optional: Border for visual clarity */
-    border-radius: 8px; /* Optional: Rounded corners */
+    border: 1px solid #ddd; // Optional: Border for visual clarity
+    border-radius: 8px; // Optional: Rounded corners
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  
-  .slide-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 400%; /* Width for four items */
-    transform: translateX(calc(-100% / 2 * var(--slide-index)));
-  }
-  
-  .slide {
-    flex: 0 0 25%; /* Each slide takes up one-fourth of the .slide-container */
-    transition: opacity 0.5s ease-in-out;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .followImage {
-    max-width: 80%;
-    max-height: 60%;
-    object-fit: cover; /* Ensures the image fills the container */
-    border-radius: 8px; /* Optional: Match the border radius of the container */
-  }
-  
-  .arrow {
-    position: absolute;
-    top: 70%;
-    transform: translateY(-50%);
-    background: #307346;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1000;
-    border-radius: 50%;
-  }
-  
-  .left-arrow {
-    left: 10px;
-  }
-  
-  .right-arrow {
-    right: 10px;
-  }
-  @media (max-width: 768px) {
-    .slide {
-      width: 50%; /* Show 2 items per slide on smaller screens */
-    }
   
     .slide-container {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+      width: 400%; // Width for four items
       transform: translateX(calc(-100% / 2 * var(--slide-index)));
-      width: calc(100% * (100 / 50)); /* Adjust the width for 2 items per slide */
-    }
-  }
   
-  @media (max-width: 480px) {
-    .slide {
-      width: 100%; /* Show 1 item per slide on the smallest screens */
+      .slide {
+        flex: 0 0 25%; // Each slide takes up one-fourth of the .slide-container
+        transition: opacity 0.5s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+        .followImage {
+          max-width: 80%;
+          max-height: 60%;
+          object-fit: cover; // Ensures the image fills the container
+          border-radius: 8px; // Optional: Match the border radius of the container
+        }
+      }
     }
   
-    .slide-container {
-      transform: translateX(calc(-100% / 1 * var(--slide-index)));
-      width: 100%; /* Adjust the width for 1 item per slide */
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: #307346;
+      color: white;
+      border: none;
+      padding: 10px;
+      cursor: pointer;
+      z-index: 1000;
+      border-radius: 50%;
+    }
+  
+    .left-arrow {
+      left: 10px;
+    }
+  
+    .right-arrow {
+      right: 10px;
+    }
+  
+    // Media Queries for Tablet
+    @media (max-width: 768px) {
+        .slide-container {
+            width: 200%; // Two items per row on tablets
+            transform: translateX(calc(-50% * var(--slide-index)));
+          }
+      
+          .slide {
+            flex: 0 0 50%; // Two slides per row on tablets
+          }
+    }
+  
+    // Media Queries for Mobile
+    @media (max-width: 576px) {
+      .slide-container {
+        width: 100%; // Full width for one item on mobile
+        transform: translateX(calc(-100% * var(--slide-index)));
+      }
+  
+      .slide {
+        flex: 0 0 100%; // One slide per row on mobile
+      }
     }
   }
   
