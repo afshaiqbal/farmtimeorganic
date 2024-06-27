@@ -1,24 +1,29 @@
 import peri from '../images/periMakhana.jpg';
+import periOriginal from '../images/periOriginal.jpeg';
 import periBack from '../images/periBack.jpeg';
 import periJar from '../images/periJar.png';
 import periNutri from '../images/periNutri.jpeg';
 import peri1 from '../images/peri1.jpeg';
 import peri2 from '../images/peri2.jpeg';
 import cheese from '../images/cheeseMakhana.jpg';
+import cheeseOriginal from '../images/cheeseOriginal.jpeg';
 import cheeseBack from '../images/cheeseBack.jpeg';
 import cheeseBlastJar from '../images/cheeseBlastJar.jpeg';
 import cheeseNutri from '../images/cheeseNutri.jpeg';
 import cheese1 from '../images/cheese1.jpeg';
 import cheese2 from '../images/cheese2.jpeg';
 import onion from '../images/onionMakhana.jpg';
+import onionOriginal from '../images/onionOriginal.jpeg';
 import onionBack from '../images/onionBack.jpeg';
 import onionJar from '../images/onionJar.jpeg';
 import onionNutri from '../images/onionNutri.jpeg';
 import onion1 from '../images/onion1.jpeg';
 import onion2 from '../images/onion2.jpeg';
 import periPopcorn from '../images/periPopcorn.jpg';
+import periPopcornO from '../images/periPopcornO.jpeg';
 import periPopBack from '../images/periPopBack.jpeg';
 import cheesePopcorn from '../images/cheesePopcorn.jpg';
+import cheesePopcornO from '../images/cheesePopcornO.jpeg';
 import cheesePopBack from '../images/cheesePopBack.jpeg'
 
 export const productData = [
@@ -33,7 +38,7 @@ export const productData = [
       brand: 'Farmtime Organic',
       availability: 'In Stock',
       image: [peri],
-      images:[peri,periBack,periNutri]
+      images:[peri,periBack,periOriginal,periNutri]
     },
     {
       id: 2,
@@ -46,7 +51,7 @@ export const productData = [
       brand: 'Farmtime Organic',
       availability: 'In Stock',
       image: [cheese],
-      images:[cheese,cheeseBack,cheeseNutri]
+      images:[cheese,cheeseBack,cheeseOriginal,cheeseNutri]
     },
       {
         id: 3,
@@ -59,7 +64,7 @@ export const productData = [
         brand: 'Farmtime Organic',
         availability: 'In Stock',
         image: [onion],
-        images:[onion,onionBack,onionNutri]
+        images:[onion,onionBack,onionOriginal,onionNutri]
       },
       {
         id: 4,
@@ -114,7 +119,7 @@ export const productData = [
         brand: 'Farmtime Organic',
         availability: 'In Stock',
         image: [periPopcorn],
-        images:[periPopcorn,periPopBack]
+        images:[periPopcorn,periPopBack,periPopcornO]
       },
       {
         id: 8,
@@ -127,39 +132,39 @@ export const productData = [
         brand: 'Farmtime Organic',
         availability: 'In Stock',
         image: [cheesePopcorn],
-        images:[cheesePopcorn,cheesePopBack]
+        images:[cheesePopcorn,cheesePopBack,cheesePopcornO]
       },
     
   ];
   export const reviewData = [
     {
       id: 1,
-      text: `The Onion and Garlic Makhana is deliciously savory and my new favorite organic snack!`,
+      text: `The Onion and Garlic Makhana is so delicious! Its savory flavor has made it my new favorite organic snack!`,
       author: "Sarah",
     },
     {
       id: 2,
-      text: `The Tangy Peri Peri Popcorn is zesty and slightly spicy, making it a unique treat.`,
+      text: `Tangy Peri Peri Popcorn is the perfect blend of zest and spice. It’s such a unique treat!`,
       author: "Rajesh Singh",
     },
     {
       id: 3,
-      text: "The Cheese Blast Makhana is rich, cheesy, and an absolute delight!",
+      text: `Cheese Blast Makhana has become my favorite! It’s rich, cheesy, and an absolute delight.`,
       author: "Aman",
     },
     {
       id: 4,
-      text: "The Cheese Blast Popcorn is perfectly cheesy and wonderfully flavorful!",
+      text: "I liked the Cheese Blast Popcorn. It is perfectly cheesy and wonderfully flavorful!",
       author: "Imran Siddiqui",
     },
     {
       id: 5,
-      text: "The Tangy Peri Peri Makhana is spicy and addictive, with just the right amount of kick. It’s a healthy, crispy snack that I can’t get enough of!",
+      text: "Onion and Garlic Makhana is addictive, with just the right amount of kick. It’s a healthy, crispy snack that I can’t get enough of!",
       author: "Sushmita Gupta",
     },
     {
       id: 6,
-      text: "The Onion and Garlic Popcorn has a well-balanced savory flavor with a satisfying crunch.",
+      text: "The Tangy Peri Peri Makhana - my all time favourite has a fantastic savory flavor, fiery kick and satisfying crunch.",
       author: "Hamza",
     },
   ]

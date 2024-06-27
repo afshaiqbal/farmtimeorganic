@@ -3,8 +3,8 @@ import React from "react";
 import AboutUs from "../AboutUs";
 import Products from "../Products";
 import FollowUs from "../FollowUs";
-import Testimonials from "../Testimonials";
-// import ReviewCarousel from "../Reviews";
+// import Testimonials from "../Testimonials";
+import ReviewCarousel from "../Reviews";
 
 
 const Dashboard = () => {
@@ -13,7 +13,8 @@ const Dashboard = () => {
       <Products/>
       <AboutUs />
       <FollowUs/>
-      <Testimonials/>
+      <ReviewCarousel/>
+      {/* <Testimonials/> */}
     </>
   );
 };

@@ -1,0 +1,134 @@
+.review-section {
+    margin: 5% 0 0 0;
+    font-family: 'Open Sans', sans-serif; /* Apply the font to the entire section */
+  
+    .title {
+      h1 {
+        font-size: 28px;
+        color: #333;
+        text-align: center;
+        font-weight: 600; /* Bold weight for the title */
+      }
+    }
+  
+    .review-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #307346;
+    }
+  
+    .review-carousel {
+      padding: 0 5%;
+      width: 100%;
+  
+      .slick-slider {
+        .slick-prev:before,
+        .slick-next:before {
+          content: "";
+        }
+        .slick-list {
+          .slick-track {
+            .slick-slide {
+              display: flex;
+              justify-content: center;
+              flex-wrap: wrap;
+            }
+          }
+        }
+      }
+  
+      .review-item {
+        flex: 0 0 100%; // Default to full width for mobile
+        padding: 20px;
+        background-color: #307346;
+        text-align: left;
+        margin: 10px;
+        font-family: 'Open Sans', sans-serif; /* Apply the font specifically to review items */
+        font-size: 14px; /* Adjust base font size for readability */
+      }
+  
+      .review-text {
+        font-size: 14px;
+        color: white;
+        margin-bottom: 10px;
+        line-height: 1.5; /* Adjust line height for better readability */
+        position: relative; /* Required for absolute positioning of pseudo-elements */
+  
+        &::before,
+        &::after {
+          font-size: 26px; /* Larger size for the quotes */
+          color: #ffffff; /* Color of the quotes */
+          font-weight: 800; /* Bold weight for the quotes */
+          position: absolute;
+        }
+  
+        &::before {
+          content: "“"; /* Left double quote */
+          top: -10px; /* Adjust positioning as needed */
+          left: -15px; /* Adjust positioning as needed */
+        }
+  
+        &::after {
+          content: "”"; /* Right double quote */
+          top: -10px; /* Adjust positioning as needed */
+          right: -9px; /* Adjust positioning as needed */
+        }
+      }
+  
+      .review-author {
+        font-size: 12px;
+        color: white;
+        font-weight: 600; /* Slightly bolder to distinguish the author */
+      }
+    }
+  
+    @media screen and (min-width: 426px) and (max-width: 768px) {
+      .title {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      .review-carousel {
+        padding: 5% 10%;
+      }
+  
+      .review-item {
+        flex: 0 0 45%; // 2 items per row with some margin
+        margin: 10px 5%; // Adjust margin for spacing
+      }
+    }
+  
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      .title {
+        h1 {
+          font-size: 2rem;
+        }
+      }
+      .review-carousel {
+        width: 80%; // Adjust width for tablet
+      }
+  
+      .review-item {
+        flex: 0 0 45%; // 2 items per row with some margin
+        margin: 10px 2.5%; // Adjust margin for spacing
+      }
+    }
+  
+    @media screen and (min-width: 1024px) {
+      .review-carousel {
+        width: 100%;
+        position: relative;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+  
+      .review-item {
+        flex: 0 0 30%; // 3 items per row
+        padding: 20px;
+        text-align: left;
+        margin: 10px 1.66%; // Spacing between items
+      }
+    }
+  }
+  

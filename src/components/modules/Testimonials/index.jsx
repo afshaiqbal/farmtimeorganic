@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.scss'; // Import the CSS for styling
 import { reviewData } from '../../../data'; // Adjust the import path based on your project structure
+import { SampleNextArrow,SamplePrevArrow } from '../../elements/ArrowButton';
 
 const TestimonialCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -30,7 +31,7 @@ const TestimonialCarousel = () => {
       <h1 title="What Our Customers Say">What Our Customers Say</h1>
       </div>
       <button className="arrow left-arrow" onClick={prevSlide}>
-        &lt;
+      <SampleNextArrow />
       </button>
 
       <div className="testimonial-slide-container">
@@ -47,7 +48,7 @@ const TestimonialCarousel = () => {
       </div>
 
       <button className="arrow right-arrow" onClick={nextSlide}>
-        &gt;
+      <SamplePrevArrow />
       </button>
     </div>
   );
