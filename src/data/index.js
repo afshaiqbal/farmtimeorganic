@@ -1,21 +1,21 @@
 import peri from '../images/periMakhana.jpg';
 import periOriginal from '../images/periOriginal.jpeg';
 import periBack from '../images/periBack.jpeg';
-import periJar from '../images/periJar.png';
+import periJar from '../images/periJar.JPG';
 import periNutri from '../images/periNutri.jpeg';
 import peri1 from '../images/peri1.jpeg';
 import peri2 from '../images/peri2.jpeg';
 import cheese from '../images/cheeseMakhana.jpg';
 import cheeseOriginal from '../images/cheeseOriginal.jpeg';
 import cheeseBack from '../images/cheeseBack.jpeg';
-import cheeseBlastJar from '../images/cheeseBlastJar.jpeg';
+import cheeseBlastJar from '../images/cheeseBlastJar.JPG';
 import cheeseNutri from '../images/cheeseNutri.jpeg';
 import cheese1 from '../images/cheese1.jpeg';
 import cheese2 from '../images/cheese2.jpeg';
 import onion from '../images/onionMakhana.jpg';
 import onionOriginal from '../images/onionOriginal.jpeg';
 import onionBack from '../images/onionBack.jpeg';
-import onionJar from '../images/onionJar.jpeg';
+import onionJar from '../images/onionJar.png';
 import onionNutri from '../images/onionNutri.jpeg';
 import onion1 from '../images/onion1.jpeg';
 import onion2 from '../images/onion2.jpeg';
@@ -24,7 +24,20 @@ import periPopcornO from '../images/periPopcornO.jpeg';
 import periPopBack from '../images/periPopBack.jpeg';
 import cheesePopcorn from '../images/cheesePopcorn.jpg';
 import cheesePopcornO from '../images/cheesePopcornO.jpeg';
-import cheesePopBack from '../images/cheesePopBack.jpeg'
+import cheesePopBack from '../images/cheesePopBack.jpeg';
+import mintJar from '../images/mintJar.JPG';
+import saltJar from '../images/saltJar.JPG';
+import heroSalt1 from '../images/heroSalt1.JPG';
+import heroOnion1 from '../images/heroOnion1.JPG';
+import heroPeri1 from '../images/heroperi1.JPG';
+import heroCheese1 from '../images/heroCheese1.JPG';
+import heroMint1 from '../images/heroMint1.jpeg';
+import heroSalt from '../images/heroSalt.JPG';
+import heroOnion from '../images/heroOnion.JPG';
+import heroPeri from '../images/heroPeri.JPG';
+import heroCheese from '../images/heroCheese.jpeg';
+import heroMint from '../images/heroMint.JPG';
+
 
 export const productData = [
     {
@@ -76,7 +89,7 @@ export const productData = [
         type: "Flavoured Makhana, Makhana",
         brand: 'Farmtime Organic',
         availability: 'In Stock',
-        image: [periJar],
+        image: [heroPeri1],
         images:[periJar, peri2, peri1, periNutri]
       },
       {
@@ -89,21 +102,47 @@ export const productData = [
         type: "Flavoured Makhana, Makhana",
         brand: 'Farmtime Organic',
         availability: 'In Stock',
-        image: [cheeseBlastJar],
+        image: [heroCheese1],
         images:[cheeseBlastJar, cheese2, cheese1, cheeseNutri]
       },
       {
         id: 6,
-        name: 'Onion & Garlic Makhana 95GM',
-        description: "Introducing FarmTime Organic's Onion Garlic Makhana, a savory snack that combines the rich flavors of onion and garlic with the crunch of roasted fox nuts, Each bite delivers a burst of aromatic taste, perfect for those who crave bold and robust flavors, Enjoy this delicious treat, which is also rich in antioxidants. Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk & coconut milk powder, Cheese, Black pepper, Onion, Garlic, Oregano, Corn Flour, Salt, Citric Acid ]. ROASTED IN OLIVE OIL , GLUTEN FREE, ZERO CHOLESTEROL. Contains milk solid & tree nuts. Read the ingredients carefully. Nutritional Information (approximate values 100g) mentioned behind the packet.",
-        quantity: 'ONION GARLIC 95GM',
+        name: 'Pudina Masala 95GM',
+        description: "Introducing FarmTime Organic's Cream & Onion Makhana, a savory snack that combines the rich flavors of onion and garlic with the crunch of roasted fox nuts, Each bite delivers a burst of aromatic taste, perfect for those who crave bold and robust flavors, Enjoy this delicious treat, which is also rich in antioxidants. Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk & coconut milk powder, Cheese, Black pepper, Onion, Garlic, Oregano, Corn Flour, Salt, Citric Acid ]. ROASTED IN OLIVE OIL , GLUTEN FREE, ZERO CHOLESTEROL. Contains milk solid & tree nuts. Read the ingredients carefully. Nutritional Information (approximate values 100g) mentioned behind the packet.",
+        quantity: 'PUDINA MASALA 95GM',
         price: 'Rs 180.00',
         ingredients: "Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk & coconut milk powder, Cheese, Black pepper, Onion, Garlic, Oregano, Corn Flour, Salt, Citric Acid ]",
         type: "Flavoured Makhana, Makhana",
         brand: 'Farmtime Organic',
         availability: 'In Stock',
-        image: [onionJar],
-        images:[onionJar, onion2, onion1, onionNutri]
+        image: [heroMint1],
+        images:[mintJar,heroMint, onionNutri]
+      },
+      {
+        id: 7,
+        name: 'Himalayan Pink Salt & Pepper 95GM',
+        description: "Introducing FarmTime Organic's Cream & Onion Makhana, a savory snack that combines the rich flavors of onion and garlic with the crunch of roasted fox nuts, Each bite delivers a burst of aromatic taste, perfect for those who crave bold and robust flavors, Enjoy this delicious treat, which is also rich in antioxidants. Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk & coconut milk powder, Cheese, Black pepper, Onion, Garlic, Oregano, Corn Flour, Salt, Citric Acid ]. ROASTED IN OLIVE OIL , GLUTEN FREE, ZERO CHOLESTEROL. Contains milk solid & tree nuts. Read the ingredients carefully. Nutritional Information (approximate values 100g) mentioned behind the packet.",
+        quantity: 'HIMALAYAN PINK SALT & PEPPER 95GM',
+        price: 'Rs 180.00',
+        ingredients: "Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk & coconut milk powder, Cheese, Black pepper, Onion, Garlic, Oregano, Corn Flour, Salt, Citric Acid ]",
+        type: "Flavoured Makhana, Makhana",
+        brand: 'Farmtime Organic',
+        availability: 'In Stock',
+        image: [heroSalt1],
+        images:[saltJar,heroSalt, onionNutri]
+      },
+      {
+        id: 8,
+        name: 'Cream & Onion 95GM',
+        description: "Introducing FarmTime Organic's Cream & Onion Makhana, a savory snack that combines the rich flavors of onion and garlic with the crunch of roasted fox nuts, Each bite delivers a burst of aromatic taste, perfect for those who crave bold and robust flavors, Enjoy this delicious treat, which is also rich in antioxidants. Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk & coconut milk powder, Cheese, Black pepper, Onion, Garlic, Oregano, Corn Flour, Salt, Citric Acid ]. ROASTED IN OLIVE OIL , GLUTEN FREE, ZERO CHOLESTEROL. Contains milk solid & tree nuts. Read the ingredients carefully. Nutritional Information (approximate values 100g) mentioned behind the packet.",
+        quantity: 'CREAM & ONION 95GM',
+        price: 'Rs 180.00',
+        ingredients: "Makhana ( popped lotus seeds) approx 70%, olive oil 14%, spices and condiments 16% [ Butter milk & coconut milk powder, Cheese, Black pepper, Onion, Garlic, Oregano, Corn Flour, Salt, Citric Acid ]",
+        type: "Flavoured Makhana, Makhana",
+        brand: 'Farmtime Organic',
+        availability: 'In Stock',
+        image: [heroOnion1],
+        images:[onionJar,heroOnion, onionNutri]
       },
 ]
 

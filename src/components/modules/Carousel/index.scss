@@ -1,0 +1,50 @@
+.hero-section-carousel {
+  // margin-top: 5px;
+
+  .slick-slider {
+    .slick-arrow {
+      display: none;
+    }
+  }
+
+  .carouselItems {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px; /* Default height for larger screens */
+
+    @media screen and (min-width: 426px) and (max-width: 768px) {
+      height: 300px; /* Adjust height for medium screens */
+    }
+
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
+      height: 400px; /* Adjust height for smaller desktop screens */
+    }
+
+    @media screen and (min-width: 1025px) {
+      height: 630px; /* Adjust height for larger desktop screens */
+    }
+
+    &.item0 {
+      background-image: url("../../../images/Carousel1.png");
+    }
+
+    &.item1 {
+      background-image: url("../../../images/heroSalt.JPG");
+    }
+
+    &.item2 {
+      background-image: url("../../../images/heroMint.JPG");
+    }
+    &.item3 {
+      background-image: url("../../../images/heroPeri.JPG");
+    }
+    &.item4 {
+      background-image: url("../../../images/heroCheese.jpeg");
+    }
+    &.item5 {
+      background-image: url("../../../images/heroOnion.JPG");
+    }
+  }
+}

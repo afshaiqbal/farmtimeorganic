@@ -5,11 +5,13 @@ import Products from "../Products";
 import FollowUs from "../FollowUs";
 // import Testimonials from "../Testimonials";
 import ReviewCarousel from "../Reviews";
+import Carousel from "../Carousel";
 
 
 const Dashboard = () => {
   return (
     <>
+      <Carousel/>
       <Products/>
       <AboutUs />
       <FollowUs/>

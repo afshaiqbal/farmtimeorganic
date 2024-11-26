@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className='footer' id="contact">
       <div className='info'>
-        <a href='/' className='logo'>
+        <a href='/' className='logo-container'>
           <img src = {logo} alt='logo' />
         </a>
         <div className='companyInfo subtitle'>

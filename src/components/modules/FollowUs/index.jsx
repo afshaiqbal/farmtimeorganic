@@ -11,15 +11,25 @@ import onionVideo from '../../../images/onionVideo.MP4';
 import periThumb from '../../../images/periThumb.jpeg';
 import cheeseThumb from '../../../images/cheeseThumb.jpeg';
 import onionThumb from '../../../images/onionThumb.jpeg';
+import heroSalt from '../../../images/heroSalt.JPG';
+import heroOnion from '../../../images/heroOnion.JPG';
+import heroPeri from '../../../images/heroPeri.JPG';
+import heroCheese from '../../../images/heroCheese.jpeg';
+import heroMint from '../../../images/heroMint.JPG';
+import cover from '../../../images/all.png';
+
 
 const FollowUs = () => {
   const slides = [
     { type: 'video', url: periVideo, thumbnail: periThumb },
     { type: 'video', url: cheeseVideo, thumbnail: cheeseThumb },
     { type: 'video', url: onionVideo, thumbnail: onionThumb },
-    { type: 'photo', url: peri },
-    { type: 'photo', url: cheese },
-    { type: 'photo', url: onion },
+    { type: 'photo', url: heroSalt },
+    { type: 'photo', url: heroOnion },
+    { type: 'photo', url: heroPeri },
+    { type: 'photo', url: heroCheese },
+    { type: 'photo', url: heroMint },
+    { type: 'photo', url: cover },
     { type: 'photo', url: logo }
   ];
 

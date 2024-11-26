@@ -1,13 +1,13 @@
-.logo-container {
+.logo {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 80vh;
   z-index: 1;
 }
 
-.logo-container img {
+.logo img {
   width: 400px;
   height: auto;
   z-index: 10;
@@ -64,11 +64,11 @@
 
 /* Media Queries for Mobile View */
 @media (max-width: 768px) {
-  .logo-container {
+  .logo {
     height: 60vh;
   }
 
-  .logo-container img {
+  .logo img {
     width: 250px;
   }
 
@@ -88,11 +88,11 @@
 }
 
 @media (max-width: 480px) {
-  .logo-container {
-    height: 70vh;
+  .logo{
+    height: 50vh;
   }
 
-  .logo-container img {
+  .logo img {
     width: 200px;
   }
 

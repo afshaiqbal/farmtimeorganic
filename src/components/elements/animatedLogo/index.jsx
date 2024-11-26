@@ -65,7 +65,7 @@ const AnimatedLogo = () => {
   }, []);
 
   return (
-    <div className="logo-container">
+    <div className="logo">
       <img ref={logoRef} src={logo} alt="Animated Logo" />
       <div className="background">
         <div className="background-image coconut-tree" ref={coconutTreeRef}></div>
